@@ -1,15 +1,19 @@
 # macOS cruft
 .DS_Store
 
-# ignore all files in data/, except the metadata
+# ignore everything in data/…
 /data/*
+
+# …except the metadata
 !/data/dataset-metadata.json
 
-# ignore any zip archives in data/
-/data/*.zip
+# …and except any README.md in raw/ or processed/
+!/data/raw/README.md
+!/data/processed/README.md
 
-# ignore processed data – version that separately in Kaggle later
-/data/processed/
+# still ignore zips and CSVs
+/data/*.zip
+/data/**/*.csv
 
 # ignore model binaries – we’ll host these on Kaggle
 /models/
