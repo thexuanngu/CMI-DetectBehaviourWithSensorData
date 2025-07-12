@@ -16,7 +16,7 @@
 /data/**/*.csv
 
 # ignore model binaries – we’ll host these on Kaggle
-/models/
+
 
 # Python environment folders
 .venv/
