@@ -1,0 +1,23 @@
+# macOS cruft
+.DS_Store
+
+# ignore all files in data/, except the metadata
+/data/*
+!/data/dataset-metadata.json
+
+# ignore any zip archives in data/
+/data/*.zip
+
+# ignore processed data – version that separately in Kaggle later
+/data/processed/
+
+# ignore model binaries – we’ll host these on Kaggle
+/models/
+
+# Python environment folders
+.venv/
+env/
+__pycache__/
+
+# VSCode workspace files
+.vscode/
